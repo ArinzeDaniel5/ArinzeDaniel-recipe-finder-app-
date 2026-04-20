@@ -1,0 +1,81 @@
+body {
+    font-famiy: 'Nunito', sans-serif ;
+    background: #f4f4f4;
+    margin:0;
+    text-align:center ;
+}
+.container {
+    max-width :900px;
+    margin:auto;
+    padding: 20px;
+}
+h1{
+    font-famiy :'Outfit', sans-serif ;
+    font-weight :600;
+    background: linear-gradient(90deg,gold, black);
+    -webkit-background-clip :text ;
+    -webkit-text-fill-color :transparent ;
+}
+.controls{
+    display :flex ;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content: center ;
+    margin-bottom: 20px ;
+}
+input,select{
+    padding: 10px;
+    font-size: 14px;
+    font-famiy :'Nunito', sans-serif;
+}
+button,.btn{
+    padding: 10px;
+    cursor :pointer ;
+    border: none ;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    font-famiy :'JetBrains Mono',monospace;
+    letter-spacing:0.5px;
+}
+button:hover{
+    background: #555;
+}
+#recipeContainer{
+    display :grid;
+    grid-template-columns: repeat (auto-fit, minmax (200px,1fr));
+    gap:15px;
+}
+.recipe{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.recipe h3{
+    font-famiy:'Lora',serif;
+}
+.recipe img{
+    width: 100%;
+    border-radius: 10px;
+}
+.modal{
+    position: fixed ;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.hidden{
+    display :none;
+}
+modal-content h2{
+    font-famiy:'Lora',serif;
+}
+#closeModal{
+    float: right ;
+    cursor: pointer ;
+    font-size: 20px;
+}
+.btn{
+    text-decoration: none ;
+}
